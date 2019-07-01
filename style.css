@@ -1,12 +1,29 @@
+html body
+{
+	background: #eee;
+}
+
+.carousel
+{
+	overflow: hidden;
+	height: 100%;
+}
+
+.content
+{
+	min-height: 950px;
+}
+
 .parallax 
 {
 	background-image: url("images/first.png");
-	min-height: 1000px; 
+	min-height: 950px; 
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	z-index : -1;
 }
 
 .test
