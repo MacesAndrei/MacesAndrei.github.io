@@ -2,7 +2,19 @@
 {
 	list-style: none;
 	text-decoration: none;
+	outline: none;
 }
+
+a {
+  outline: 0;
+}
+
+button
+{
+	outline: none;
+}
+
+
 
 li
 {
