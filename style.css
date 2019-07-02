@@ -1,0 +1,93 @@
+html body
+{
+	background: #eee;
+}
+
+.carousel
+{
+	overflow: hidden;
+	height: 100%;
+}
+
+.content
+{
+	min-height: 950px;
+}
+
+.first
+{
+	background-image: url("images/first.jpg");
+}
+
+.second
+{
+	background-image: url("images/second.jpg");
+}
+
+.third
+{
+	background-image: url("images/third.jpg");
+}
+
+.parallax 
+{
+	
+	height: 950px; 
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index : -1;
+}
+
+.test
+{
+	height: 5000px;
+}
+
+.quote
+{
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.quote h1
+{
+	font-size: 80px;
+	text-shadow: -5px 5px 8px black;
+	margin-bottom: 40px;
+}
+
+.quote h3
+{
+	font-size: 40px;
+	text-shadow: -5px 5px 8px black;
+}
+
+@media screen and (max-width: 600px)
+/**/
+{
+
+.quote
+{
+	height: 60%;
+}
+
+.quote h1
+{
+	font-size: 40px;
+}
+
+.quote h3
+{
+	font-size: 30px;
+}
+
+
+}
+/**/
