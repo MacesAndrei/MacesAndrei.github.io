@@ -188,8 +188,8 @@
 		var devHeight = $(window).height();
 		
 	console.log($(this).scrollTop()/devHeight);
-	
-	if($(this).scrollTop()/devHeight > 1 && $(this).scrollTop()/devHeight < 1.1 || 
+	if(devHeight > 500)
+	{if($(this).scrollTop()/devHeight > 1 && $(this).scrollTop()/devHeight < 1.1 || 
 	$(this).scrollTop()/devHeight > 2 && $(this).scrollTop()/devHeight < 2.1 || 
 	$(this).scrollTop()/devHeight > 3 && $(this).scrollTop()/devHeight < 3.1 || 
 	$(this).scrollTop()/devHeight > 4 && $(this).scrollTop()/devHeight < 4.1)
@@ -197,6 +197,19 @@
 		$nav.toggleClass('bg-dark');		
 		$nav.toggleClass('navbar-dark');
 		console.log($(this).scrollTop());
+	}}
+	
+	else
+	{
+		if($(this).scrollTop()/devHeight > 1 || 
+	$(this).scrollTop()/devHeight > 2  || 
+	$(this).scrollTop()/devHeight > 3  || 
+	$(this).scrollTop()/devHeight > 4 )
+	{
+		$nav.toggleClass('bg-dark');		
+		$nav.toggleClass('navbar-dark');
+		console.log($(this).scrollTop());
+	}
 	}
 	
 	
