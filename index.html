@@ -177,19 +177,31 @@
 	
 	<script>
 	
+	var state = false;
+	
+	$(document).ready(function(state){
 	
 		$(document).scroll(function () {
 		
 		var $nav = $(".navbar");
 		
 		var devHeight = $(window).height();
+		
+	console.log($(this).scrollTop()/devHeight);
 	
-	$nav.toggleClass('bg-dark', $(this).scrollTop() > devHeight * 2);		
-			
-    $nav.toggleClass('navbar-dark', $(this).scrollTop() > devHeight * 2);
+	if($(this).scrollTop()/devHeight > 1 && $(this).scrollTop()/devHeight < 1.1 || 
+	$(this).scrollTop()/devHeight > 2 && $(this).scrollTop()/devHeight < 2.1 || 
+	$(this).scrollTop()/devHeight > 3 && $(this).scrollTop()/devHeight < 3.1 || 
+	$(this).scrollTop()/devHeight > 4 && $(this).scrollTop()/devHeight < 4.1)
+	{
+		$nav.toggleClass('bg-dark');		
+		$nav.toggleClass('navbar-dark');
+		console.log($(this).scrollTop());
+	}
+	
 	
 										});
-				
+	});
 	
 	</script>
 	
