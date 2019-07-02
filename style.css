@@ -5,6 +5,28 @@
 	outline: none;
 }
 
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+.EuroLogo
+{
+	width: 150px;
+	height: 150px;
+	margin: 20px 0 0 20px;	
+}
+
+.Logo
+{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0 20px 20px 0;
+}
+
 a {
   outline: 0;
 }
