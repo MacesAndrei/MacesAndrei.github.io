@@ -195,8 +195,7 @@ li div
 .poze
 {
 	width: 59%;
-	padding-top: 50px;
-}
+	padding-top: 50px;}
 
 .info3
 {
@@ -218,9 +217,27 @@ li div
  	font-weight: bold;
 }
 
+.siteul
+{
+	position: absolute;
+	top: 200%;
+	right: 0;
+	margin: 0 20px 20px 0; 
+}
+
 @media screen and (max-width: 600px)
 /**/
 {
+
+.ibmSlovacia
+{
+	width: 100%;
+}
+
+.siteul
+{
+	display: none;
+}
 
 .EuroLogo
 {
@@ -250,11 +267,6 @@ li div
 	height: 30%;
 }
 	
-.slider
-{
-	
-}
-	
 .info3
 {
 	width: 100%;
@@ -266,7 +278,7 @@ li div
 	padding: 0;
 	text-align: center;
 }
-	
+
 .slider
 {
 	height: 65%;
