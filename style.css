@@ -72,6 +72,12 @@ html body
 	text-shadow: -5px 5px 8px black;
 }
 
+.navbar
+{
+	box-shadow: 0px -2px 5px 1px black;
+	transition: 0.5s;
+}
+
 @media screen and (max-width: 600px)
 /**/
 {

@@ -89,35 +89,80 @@
   </div>
   
  </div>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="position: sticky; top: 0;">
-  <a class="navbar-brand" href="#">Euro4thewin</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Despre noi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>
+ 
+	<!-- Bara de navigare -->
+ 
+	<nav class="navbar navbar-expand-md  bg-light navbar-light" style="position: sticky; top: 0;">
+ 
+		<a class="navbar-brand" href="#">Euro4thewin</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+			<span class="navbar-toggler-icon"></span>
+
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+			<ul class="navbar-nav">
+
+				<li class="nav-item">
+
+					<a class="nav-link" href="#">Despre noi</a>
+
+				</li>
+
+				<li class="nav-item">
+
+					<a class="nav-link" href="#">Link</a>
+
+				</li>
+
+				<li class="nav-item">
+
+					<a class="nav-link" href="#">Link</a>
+
+				</li>    
+
+			</ul>
+
+		</div>  
+
+	</nav>
+	
+	<!-- Despre noi -->
  
 	<div class="fullscreen">
+		
+	
 	
 		<h1>Despre noi</h1>
 	
 	</div>
  
-	
+	<!-- Nume de sectiune -->
+ 
+	<div class="fullscreen bg-dark">
 	
 		
+	
+	</div>
+	
+	<div class="fullscreen bg-light">
+	
+		
+	
+	</div>
+	
+	<div class="fullscreen bg-dark">
+	
+		
+	
+	</div>
+	
+	
+	<!-- Clasa fullscreen -->
+	
 	<script>
 	
 	var devHeight = $(window).height();
@@ -127,7 +172,28 @@
 	console.log(devHeight);
 	
 	</script>
+
+	<!-- Navbar color change -->
+	
+	<script>
+	
+	
+		$(document).scroll(function () {
 		
+		var $nav = $(".navbar");
+		
+		var devHeight = $(window).height();
+	
+	$nav.toggleClass('bg-dark', $(this).scrollTop() > devHeight * 2);		
+			
+    $nav.toggleClass('navbar-dark', $(this).scrollTop() > devHeight * 2);
+	
+										});
+				
+	
+	</script>
+	
+
 	
 	</body>
 
