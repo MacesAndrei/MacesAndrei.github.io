@@ -49,7 +49,7 @@ html body
 	height: 5000px;
 }
 
-.quote
+.quote , .center
 {
 	width: 70%;
 	position: absolute;
@@ -58,6 +58,32 @@ html body
 	transform: translate(-50%,-50%);
 	
 }
+
+
+.comingSoon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	padding-top: 50%;
+}
+
+.comingSoon:before,
+.comingSoon:after {
+    content: '';
+    border-top: 1px solid rgba(0,0,0,0.5);
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+
+
+.comingSoon:after {
+    margin: 0 0 0 20px;
+}
+
+
 
 .quote h1
 {

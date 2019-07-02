@@ -133,10 +133,10 @@
 	<!-- Despre noi -->
  
 	<div class="fullscreen">
-		
+				
+				
+		<h4 class="comingSoon display-1 lines">Coming soon</h1>
 	
-	
-		<h1>Despre noi</h1>
 	
 	</div>
  
@@ -144,19 +144,19 @@
  
 	<div class="fullscreen bg-dark">
 	
-		
+		<h4 class="comingSoon display-1 lines text-light">Coming soon</h1>
 	
 	</div>
 	
 	<div class="fullscreen bg-light">
 	
-		
+		<h4 class="comingSoon display-1 lines">Coming soon</h1>
 	
 	</div>
 	
 	<div class="fullscreen bg-dark">
 	
-		
+		<h4 class="comingSoon display-1 lines text-light">Coming soon</h1>
 	
 	</div>
 	
@@ -168,8 +168,6 @@
 	var devHeight = $(window).height();
 	
 	$(".fullscreen").css("height" , devHeight);
-	
-	console.log(devHeight);
 	
 	</script>
 
@@ -188,7 +186,7 @@
 		var devHeight = $(window).height();
 		
 	console.log($(this).scrollTop()/devHeight);
-	if(devHeight > 500)
+	if(devHeight > 900)
 	{if($(this).scrollTop()/devHeight > 1 && $(this).scrollTop()/devHeight < 1.1 || 
 	$(this).scrollTop()/devHeight > 2 && $(this).scrollTop()/devHeight < 2.1 || 
 	$(this).scrollTop()/devHeight > 3 && $(this).scrollTop()/devHeight < 3.1 || 
@@ -198,15 +196,20 @@
 		$nav.toggleClass('navbar-dark');
 		console.log($(this).scrollTop());
 	}}
-	
-	
-	
 										});
 	});
 	
 	</script>
 	
-
+	<script>
+	
+		var devHeight = $(window).height();
+	
+		if(devHeight < 900)
+		
+		$('.comingSoon').addClass('display-2');
+	
+	</script>
 	
 	</body>
 
