@@ -219,6 +219,22 @@ li div
 /**/
 {
 
+.EuroLogo
+{
+	width: 100px;
+	height: 100px;
+	margin: 20px 0 0 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.Logo
+{
+	width: 100px;
+	height: 100px;
+}
+
 .poze
 {
 	width: 100%;
