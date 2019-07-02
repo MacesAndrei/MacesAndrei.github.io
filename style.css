@@ -29,9 +29,14 @@ html body
 	background-image: url("images/third.jpg");
 }
 
-.parallax 
+.fullscreen
 {
 	width: auto;
+}
+
+.parallax 
+{
+	
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

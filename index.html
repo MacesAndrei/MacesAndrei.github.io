@@ -25,7 +25,7 @@
 	
 	<body>
 		
-	<div id="demo" class="carousel slide" data-ride="carousel">
+	<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
   
   <!-- The slideshow -->
   <div class="carousel-inner">
@@ -34,7 +34,7 @@
       
 	  <!-- Imagine cu citat -->
 		
-		<div class="parallax first">
+		<div class="parallax first fullscreen">
 		
 			<div class="quote">
 			
@@ -52,7 +52,7 @@
    
 		  <!-- Imagine cu citat -->
 		
-		<div class="parallax second">
+		<div class="parallax second fullscreen">
 		
 			<div class="quote">
 			
@@ -71,7 +71,7 @@
 		
 		  <!-- Imagine cu citat -->
 		
-		<div class="parallax third">
+		<div class="parallax third fullscreen">
 		
 			<div class="quote">
 			
@@ -88,6 +88,13 @@
   
   </div>
  
+ 
+	<div class="fullscreen bg-dark">
+	
+		<h1>Despre noi</h1>
+	
+	</div>
+ 
 	
 	</div>
 		
@@ -95,7 +102,7 @@
 	
 	var devHeight = $(window).height();
 	
-	$(".parallax").css("height" , devHeight);
+	$(".fullscreen").css("height" , devHeight);
 	
 	console.log(devHeight);
 	
