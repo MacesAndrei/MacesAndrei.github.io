@@ -161,17 +161,75 @@ li div
 	padding-top: 50px;
 }
 
+.info3
+{
+	width: 35%; 
+	margin-right: 40px;
+}
+
+.info3 h4
+{
+	padding-left: 30px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+
+.info1
+{
+	padding: 0 0px 20px 30px;
+ 	font-weight: bold;
+}
+
 @media screen and (max-width: 600px)
 /**/
 {
+
+.poze
+{
+	width: 100%;
+	padding: 0;
+}
+
+.fullHeight
+{
+	display: inline;
+	height: 30%;
+}
+	
 .slider
 {
-	height: 70%;
+	
+}
+	
+.info3
+{
+	width: 100%;
+	margin-right: 0;
+}
+
+.info3 h4
+{
+	padding: 0;
+	text-align: center;
+}
+	
+.slider
+{
+	height: 65%;
 }
 	
 .info
 {
 	display: none;
+}
+
+.info1
+{
+	margin-left: 6%;
+	width: 80%;
+	text-align: center;
+	padding: 0 0px 0px 30px; 	
 }
 
 .poze
