@@ -90,6 +90,7 @@ html body
 .fullscreen
 {
 	width: auto;
+	min-height: 650px;
 }
 
 .half
@@ -109,10 +110,13 @@ html body
 	display: inline-block;
 }
 
+.bg1
+{
+	background-image: url('images/bg1.png');
+}
 
 .parallax 
 {
-	
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -225,7 +229,7 @@ li div
 	margin: 0 20px 20px 0; 
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 /**/
 {
 
