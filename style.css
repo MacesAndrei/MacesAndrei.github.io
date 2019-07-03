@@ -5,6 +5,12 @@
 	outline: none;
 }
 
+.loaded
+{
+	position: fixed;
+   background-color: white;
+}
+
 @keyframes appearing
 {
 	from	{opacity: 0;}

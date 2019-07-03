@@ -31,6 +31,14 @@
 	
 	<body>
 		
+		<div class="quote" style="z-index: 1001; width: 10%; height: 10%;" id="spin">
+		<div class="spinner-border" style="z-index: 1001; width: 50px; height: 50px;"></div>
+		</div>
+		
+	<div class="fullscreen loaded" id="Load">
+
+		<img src="images/load.png" class="fullscreen" id="imgSpin">
+	
 	<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" >
   
   <!-- The slideshow -->
@@ -198,7 +206,7 @@
 	
 	<!-- Poze -->
 	
-	<div id="myCarousel" class="carousel slide slider" data-ride="carousel">
+	<div id="myCarousel" class="carousel slide slider" data-ride="carousel" data-interval="false">
    
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -325,7 +333,7 @@
 	
 		<h4 class="comingSoon display-3 lines bg-light" style="padding: 60px 0;">Membrii Echipei</h1>
 	
-		<div id="myCarouselll" class="carousel slide slider poze bg-light" data-ride="carousel" style="width: 100% ;">
+		<div id="myCarouselll" class="carousel slide slider poze bg-light" data-ride="carousel" style="width: 100%;">
    
     <ol class="carousel-indicators">
       <li data-target="#myCarouselll" data-slide-to="0" class="active"></li>
@@ -732,6 +740,20 @@
 		if(devHeight < 900)
 		
 		$('.comingSoon').addClass('display-2');
+	
+	</script>
+	
+	</div>
+	
+	<script>
+	
+	$(document).ready(function(){
+	
+		$('#spin').remove();
+		$('#imgSpin').remove();
+		$('#Load').removeClass('loaded');
+	
+	});
 	
 	</script>
 	
