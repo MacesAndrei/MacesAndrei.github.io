@@ -31,14 +31,16 @@
 	
 	<body>
 		
-		<div class="quote" style="z-index: 1001; width: 10%; height: 10%;" id="spin">
-		<div class="spinner-border" style="z-index: 1001; width: 50px; height: 50px;"></div>
-		</div>
+		
 		
 	<div class="fullscreen loaded" id="Load">
-
+	
+			<div class="quote" style="z-index: 1001; width: 10%; height: 10%;" id="spin">
+		<div class="spinner-border" style="z-index: 1001; width: 50px; height: 50px;"></div>
+		</div>
 		<img src="images/load.png" class="fullscreen" id="imgSpin">
 	
+	</div>
 	<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" >
   
   <!-- The slideshow -->
@@ -743,17 +745,13 @@
 	
 	</script>
 	
-	</div>
-	
 	<script>
 	
 	$(document).ready(function(){
 		
 		$(window).bind("load", function() {
 		
-		$('#spin').remove();
-		$('#imgSpin').remove();
-		$('#Load').removeClass('loaded');
+		$('#Load').remove();
 		
 		});
 		
