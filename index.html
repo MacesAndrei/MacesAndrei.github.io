@@ -748,10 +748,14 @@
 	<script>
 	
 	$(document).ready(function(){
-	
+		
+		$(window).bind("load", function() {
+		
 		$('#spin').remove();
 		$('#imgSpin').remove();
 		$('#Load').removeClass('loaded');
+		
+		});
 		
 	});
 	
