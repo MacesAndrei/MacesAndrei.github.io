@@ -1,716 +1,182 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 	<head>
 	
+		<title>
 		
+			Euro4TheWin - CNPCB
 		
-		<script src="script.js"></script>
+		</title>
 		
-		<meta name="viewport" content="width=device-width,initial-scale: 1.0">
+		<!-- Internal Files / Fisiere Interne -->
 		
-		<meta charset="UTF-8">
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="fonts.css" />
+		
+		<!-- Bootstrap 3 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
-		<link rel="stylesheet" href="style.css">
-		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
+		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+		<!-- Bootstrap 3 JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		
+		<!-- Fonturi -->
+		
+		<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+
+		
+		
 	
 	</head>
-	
-	<body>
-		
-		
-	<!-- Loading -->
-	<div class="fullscreen loaded" id="Load">
-	
-			<div class="quote" style="z-index: 1001; width: 10%; height: 10%;" id="spin">
-		<div class="spinner-border" style="z-index: 1001; width: 50px; height: 50px;"></div>
-		</div>
-		<img src="images/load.png" class="fullscreen" id="imgSpin" style="z-index: 1001;">
-	
-	</div>
 
+	<body>
 	
-	<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false" >
-  
-  <div class="carousel-inner" id="quote">
-    
-	<div class="carousel-item active" id="first">
-      
-	  <!-- Imagine cu citat -->
-		
-		<div class="parallax first fullscreen">
-		
-			<img src="images/EuroLogo.png" class="EuroLogo">
+	
+		<!-- Bara de navigare -->
+	
+		<nav class="navbar navbar-inverse">
 			
-			<div class="quote">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">WebSiteName</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown"><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"> Page 4</a></li>
+						<li><a href="#"> Page 5</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Titlu cu descriere -->
+		
+		<div class="container-fluid text-center w-50">
+		
+			<div class="pv-30">
+				<div class="page-header">
+					<h1>Colegiul Național Constantin Brătescu</h1>
+				</div>
 			
-				<h1 class="text-light">„Education is the key to succes in life.”</h1>
+				<p>
+			
+					Timp de două decenii, începând cu anul 1979, Colegiul Naţional Pedagogic ,,
+					Constantin Brătescu” a fost Centru de perfecţionare a educatoarelor şi învăţătorilor 
+					din judeţele Constanţa şi Tulcea; în Centru s-au format circa 6000 de cadre didactice 
+					pentru toată Dobrogea.
+			
+				</p>
+			</div>
+			
+		</div> 
+		
+		<!-- Galerie -->
+		
+		<div class="container-fluid">
+		
+			<div class="row">
+			
+				<div class="col-sm-4">
 				
-				<h3 class="float-right text-light bg-dark" style="padding: 5px; border-radius: 10px;"> - Solomon Ortiz</h3>
-			
+					<img src="images/1b.jpg" class="img-responsive">
+				
+				</div>
+				
+				<div class="col-sm-4">
+				
+					<img src="images/2b.jpg" class="img-responsive">
+				
+				</div>
+				
+				<div class="col-sm-4">
+				
+					<img src="images/3b.jpg" class="img-responsive">
+				
+				</div>
 			
 			</div>
 			
-			<img src="images/LogoFull.png" class="Logo">
+			<div class="row">
+			
+				<div class="col-sm-4">
+				
+					<img src="images/4b.jpg" class="img-responsive">
+				
+				</div>
+				
+				<div class="col-sm-4">
+				
+					<img src="images/5b.jpg" class="img-responsive">
+				
+				</div>
+				
+				<div class="col-sm-4">
+				
+					<img src="images/6b.jpg" class="img-responsive">
+				
+				</div>
+			
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4">
+				
+					<img src="images/7b.jpg" class="img-responsive">
+				
+				</div>
+				
+				<div class="col-sm-4">
+				
+					<img src="images/8b.jpg" class="img-responsive">
+				
+				</div>
+				
+				<div class="col-sm-4">
+				
+					<img src="images/bg1.jpg" class="img-responsive">
+				
+				</div>
+				
+			
+			</div>
+			
+		
+		</div>
+		
+		<!-- Programul Euroscola -->
+		
+		<div class="container-fluid bg-invert">
+			
+			<div class="case text-center">
+			
+				<p class="devise">
+				
+					„Educația este cheia succesului”
+				
+				</p>
+				
+											<p class="author">- Solomon Ortiz</p>
+			
+			</div>
 			
 		</div>
-	  
-   </div>
-  
-  </div>
-  
- </div>
- 
-	<!-- Bara de navigare -->
- 
-	<nav class="navbar navbar-expand-md  bg-light navbar-light" style="position: sticky; top: 0; z-index: 100;">
-
 		
-			<a href="#quote"><img src="images/Logo.png" alt="Logo" style="width: 40px;"></a>
-
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="outline: none;">
-
-			<span class="navbar-toggler-icon"></span>
-
-		</button>
-
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-			<ul class="navbar-nav">
-
-				<li class="nav-item">
-
-					<a class="nav-link" href="#despreNoi">Despre noi</a>
-
-				</li>
-
-				<li class="nav-item">
-
-					<a class="nav-link" href="#echipa">Membrii</a>
-
-				</li>
-
-				<li class="nav-item">
-
-					<a class="nav-link" href="#IBM">Proiecte</a>
-
-				</li>    
-
-			</ul>
-
-		</div>  
-
-	</nav>
-	
-	<!-- Despre noi -->
- 
-	<div class="fullscreen parallax bg1" id = "despreNoi" style="overflow: hidden;">
-	
-	<h4 class="comingSoon display-3 lines" style="margin-top: 60px;">Despre noi</h1>
-
-	<h3 class="text-dark siteul">Site-ul liceului: <a href="https://www.colegium.ro/">www.colegium.ro</a></h3>
-	
-	<div style="margin-top: 50px;">
-	<div class="fullHeight info3">
-	
-	
-	
-	<h4>Colegiul National Constantin Bratescu</h3>
-	
-	<p class="info1"> Timp de două decenii, începând cu anul 1979, Colegiul Naţional Pedagogic ,,Constantin Brătescu” a fost Centru de perfecţionare 
-	a educatoarelor şi învăţătorilor din judeţele Constanţa şi Tulcea; în Centru s-au format circa 6000 de cadre didactice pentru toată 
-	Dobrogea.
-	</p>
-	
-	<p style="padding: 0 0px 20px 30px;  	font-weight: bold;
-" class="info">    Colegiul Naţional Pedagogic Constantin Brătescu din Constanţa a câştigat de patru ori consecutiv titlul de Şcoala Europeană,
-	fiind singura instituție din Dobrogea și una dintre cele 4 școli din țară care au reuşit această performanță.
-	</p>
-	
-	<p style="padding: 0 0px 20px 30px;  font-weight: bold;" class="info">  În contextul actual, Colegiul a devenit, astfel, un reper cultural al Constanţei care promovează învăţământul de calitate, performanţă,
-	îmbinând într-un mod creativ inovaţia şi tradiţia validată de o existenţă de peste 120 de ani vechime.
-	</p>
-	
-	<p style="padding: 0 0px 20px 30px; 	font-weight: bold;" class="info">În anul 1993, la aniversarea a 100 de ani de la înfiinţarea Şcolii Normale ,,Constantin Brătescu” – instituţia a primit titlul onorific de 
-	Colegiul Naţional Pedagogic ,,Constantin Brătescu”, primul Colegiu Naţional din această parte a Ţării. Ministrul Educaţiei, prof. univ.dr. Liviu Maior, reliefa că ,,în calitate de responsabil 
-	al destinelor învăţământului românesc, în actualul guvern, îmi îngădui a aprecia că existenţa de atâtea decenii a Şcolii Normale din Constanţa s-a constituit într-o valoroasă şi perpetuă sursă 
-	de reîmprospatare a corpului învăţătoresc şi profesoral din această parte transdanubiană, mai ales, a ţării, pe băncile Normalei tomitane formându-se, de asemenea, şi sute de alţi specialişti 
-	cu pregătire medie şi, mai apoi, superioară.
-	</p>
-	
-	</div>
-	
-	
-
-	
-	<div class="fullHeight poze">
-	
-	<!-- Poze -->
-	
-	<div id="myCarousel" class="carousel slide slider" data-ride="carousel" data-interval="false">
-   
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-	   <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-	   <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
-    </ol>
-
-   
-    <div class="carousel-inner">
-
-		<div class="item active">
-        <img src="images/main.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-			<h3>Colegiul Național „Constantin Brătescu”</h3>
-		</div>
-		
-      </div>
-	
-      <div class="item">
-        <img src="images/1b.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-			<h3>Laborator TIC</h3>
-		</div>
-		
-      </div>
-
-      <div class="item">
-        <img src="images/2b.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-			<h3>Laborator Chimie-Biologie</h3>
-		</div>
-		
-      </div>
-    
-      <div class="item">
-        <img src="images/3b.jpg"  style="width:100%;">
-		
-		 <div class="carousel-caption">
-			<h3>Sală de clasă</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/4b.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-		<h3>Bibliotecă</h3>
-		</div>
-		
-      </div>
-
-      <div class="item">
-        <img src="images/5b.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-			<h3>Grădina Colegiului</h3>
-		</div>
-		
-      </div>
-    
-      <div class="item">
-        <img src="images/6b.jpg"  style="width:100%;">
-		
-		 <div class="carousel-caption">
-			<h3>Sală de clasă</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/7b.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-			<h3>Sală cu scenă</h3>
-		</div>
-		
-      </div>
-
-      <div class="item">
-        <img src="images/8b.jpg" style="width:100%;">
-		
-		<div class="carousel-caption">
-			<h3>Cameră în internat</h3>
-		</div>
-		
-      </div>
-	  
-    </div>
-
- 
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-	
-	<!-- Sfarsit Poze -->
-	
-	</div>
-	
-
-	
-	</div>
- 
-	
- 
-	</div>
-	
-	<div class="fullscreen bg-light" id="echipa">
-	
-		<h4 class="comingSoon display-3 lines bg-light" style="padding: 60px 0;">Membrii echipei</h1>
-	
-		<div id="myCarouselll" class="carousel slide slider poze bg-light" data-ride="carousel" style="width: 100%;">
-   
-    <ol class="carousel-indicators">
-      <li data-target="#myCarouselll" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarouselll" data-slide-to="1"></li>
-      <li data-target="#myCarouselll" data-slide-to="2"></li>
-	  <li data-target="#myCarouselll" data-slide-to="3"></li>
-      <li data-target="#myCarouselll" data-slide-to="4"></li>
-      <li data-target="#myCarouselll" data-slide-to="5"></li>
-      <li data-target="#myCarouselll" data-slide-to="6"></li>
-      <li data-target="#myCarouselll" data-slide-to="7"></li>
-      <li data-target="#myCarouselll" data-slide-to="8"></li>
-      <li data-target="#myCarouselll" data-slide-to="9"></li>
-      <li data-target="#myCarouselll" data-slide-to="10"></li>
-      <li data-target="#myCarouselll" data-slide-to="11"></li>
-      <li data-target="#myCarouselll" data-slide-to="12"></li>
-      <li data-target="#myCarouselll" data-slide-to="13"></li>
-      <li data-target="#myCarouselll" data-slide-to="14"></li>
-      <li data-target="#myCarouselll" data-slide-to="15"></li>
-      <li data-target="#myCarouselll" data-slide-to="16"></li>
-      <li data-target="#myCarouselll" data-slide-to="17"></li>
-      <li data-target="#myCarouselll" data-slide-to="18"></li>
-      <li data-target="#myCarouselll" data-slide-to="19"></li>
-      <li data-target="#myCarouselll" data-slide-to="20"></li>
-      <li data-target="#myCarouselll" data-slide-to="21"></li>
-      <li data-target="#myCarouselll" data-slide-to="22"></li>
-      <li data-target="#myCarouselll" data-slide-to="23"></li>
-      <li data-target="#myCarouselll" data-slide-to="24"></li>
-      <li data-target="#myCarouselll" data-slide-to="25"></li>
-    </ol>
-
-   
-    <div class="carousel-inner" id="pers">
-	
-      <div class="item active">
-        <img src="images/1c.png" style="width:100%;">
-		<div class="carousel-caption">
-			<h3>Nume_Profesor</h3>
-		</div>
-		
-      </div>
-
-      <div class="item">
-        <img src="images/2c.png" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Profesor</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/3c.png" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/4c.png" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/5c.png" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/6c.png" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/7c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/8c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/9c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/10c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/11c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/12c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/13c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/14c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/15c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/16c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/17c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/18c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/19c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/20c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/21c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/22c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/23c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/24c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/25c.jpg" style="width:100%;">
-		
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/26c.jpg" style="width:100%;">
-		 
-		 <div class="carousel-caption">
-			<h3>Nume_Elev</h3>
-		</div>
-		
-      </div>
-	  
-    </div>
-
- 
-    <a class="left carousel-control" href="#myCarouselll" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarouselll" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-	
-	</div>
-	
-	<div class="fullscreen bg-dark" id="IBM" style="overflow: hidden;">
-					
-		<h4 class="comingSoon display-3 lines text-light" style="padding: 60px 0;">Proiecte educaționale europene</h1>
-		
-		<div id="myCarousell" class="carousel slide slider poze" data-ride="carousel" style="margin: 0 auto;	">
-   
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousell" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousell" data-slide-to="1"></li>
-      <li data-target="#myCarousell" data-slide-to="2"></li>
-	  <li data-target="#myCarousell" data-slide-to="3"></li>
-      <li data-target="#myCarousell" data-slide-to="4"></li>
-      <li data-target="#myCarousell" data-slide-to="5"></li>
-    </ol>
-
-   
-    <div class="carousel-inner">
-      <div class="item active">
-	  
-        <img src="images/1a.jpg" style="width:100%;">
-		
-      </div>
-
-      <div class="item">
-        <img src="images/2a.jpg" style="width:100%;">
-		
-		
-		
-      </div>
-    
-      <div class="item">
-        <img src="images/3a.jpg"  style="width:100%;">
-		
-		 
-		
-      </div>
-	  
-	  <div class="item">
-        <img src="images/4a.jpg" style="width:100%;">
-		
-		
-		
-      </div>
-
-      <div class="item">
-        <img src="images/5a.jpg" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="images/6a.jpg"  style="width:100%;">
-		
-		
-		
-      </div>
-    </div>
-
- 
-    <a class="left carousel-control" href="#myCarousell" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousell" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>	
-	
-	</div>
-	
-	<div class="fullscreen" id="" style="overflow: hidden;">
-	</div>
-	
-	<!-- Clasa fullscreen -->
-	
-	<script>
-	
-	var devHeight = $(window).height();
-	var devWidth = $(window).width();
-	
-	$(".fullscreen").css("height" , devHeight);
-	$(".half").css("height" , devHeight/2);
-	$(".Third").css("height" , devHeight/3);
-	$(".halfWidth").css("height" , devWidth/2);
-	$(".fullHeight").css("height" , devHeight - 150);
-	
-	
-	</script>
-
-	<!-- Navbar color change -->
-	
-	<script>
-	
-	var state = false;
-	
-	$(document).ready(function(state){
-	
-		$(document).scroll(function () {
-		
-		var $nav = $(".navbar");
-		
-		var devHeight = $(window).height();
-		
-	console.log($(this).scrollTop()/devHeight);
-	if(devHeight > 900)
-	{if($(this).scrollTop()/devHeight > 1 && $(this).scrollTop()/devHeight < 1.1 || 
-	$(this).scrollTop()/devHeight > 2 && $(this).scrollTop()/devHeight < 2.1 || 
-	$(this).scrollTop()/devHeight > 3 && $(this).scrollTop()/devHeight < 3.1 || 
-	$(this).scrollTop()/devHeight > 4 && $(this).scrollTop()/devHeight < 4.1)
-	{
-		$nav.toggleClass('bg-dark');		
-		$nav.toggleClass('navbar-dark');
-		console.log($(this).scrollTop());
-	}}
-										});
-	});
-	
-	</script>
-	
-	<script>
-	
-		var devHeight = $(window).height();
-	
-		if(devHeight < 900)
-		
-		$('.comingSoon').addClass('display-2');
-	
-	</script>
-	
-	<script>
-	
-	$(document).ready(function(){
-		
-		$(window).bind("load", function() {
-		
-		$('#Load').remove();
-		
-		});
-		
-	});
-	
-	</script>
-	
 	</body>
-
+	
 </html>
