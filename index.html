@@ -14,21 +14,44 @@
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" style=""></script>
 	
+		<script type="text/javascript" src="dragscroll.js"></script>
+	
 		<script>
 		
-			$(function() 
+		$(function() 
 			{
 
-				$(".horizontal-scroll").mousewheel(function(event, delta) 
+				$("h1").hide();
+			
+			if($(window).width() > 640)
+			
+				$(".horizontal-scroll").mousewheel(function(event, delta)
 				{
-
-					this.scrollLeft += (delta * 100);
+				if(this.scrollLeft%$(window).width() == 0)
+					this.scrollLeft += $(window).width() * delta;
+					
+					if(this.scrollLeft == 0)
+					{
+						console.log(1);
+					}
+					
+					if(this.scrollLeft == $(window).width() )
+					{
+						console.log(2);
+					}
+					
+					if(this.scrollLeft == $(window).width() * 2)
+					{
+						console.log(3);
+					}
 	
 					event.preventDefault();
 
 				});
 
 			});
+		
+			
 		
 		</script>
 	
@@ -44,25 +67,25 @@
 		
 		</nav>
 	
-		<div class="horizontal-scroll">
+		<div class="horizontal-scroll dragscroll">
 		
 			
 		
 			<div class="bg-1 parallax" id="bg-1">
 			
-				
+				<h1 class="center">First</h1>
 			
 			</div>
 			
 			<div class="bg-2 parallax" id="bg-2">
 			
-				
+				<h1 class="center">Second</h1>
 			
 			</div>
 			
 			<div class="bg-3 parallax" id="bg-3">
 			
-	
+				<h1 class="center">Third</h1>
 			
 			</div>
 		

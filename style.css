@@ -5,6 +5,15 @@
 	scroll-behavior: smooth;
 }
 
+.center
+{
+	position: absolute;
+	top: 50%;
+	right:50%;
+	transform: translate(-50% , -50%);
+	color: white;
+}
+
 .parallax 
 {
 	background-attachment: fixed;
@@ -46,6 +55,7 @@ nav
 
 .horizontal-scroll div
 {
+	position: relative;
 	height: 100vh;
 	width: 100vw;
 	display: inline-block;
