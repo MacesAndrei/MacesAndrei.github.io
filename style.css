@@ -73,3 +73,11 @@ nav
 	white-space: nowrap;
 }
 
+@media @media screen and (max-width: 640px) 
+{
+	.horizontal-scroll div
+	{
+		display: block;
+	}
+}
+

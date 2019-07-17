@@ -49,6 +49,33 @@
 
 				});
 
+			else
+			{
+				$(".horizontal-scroll").mousewheel(function(event, delta)
+				{
+				if(this.scrollTop%$(window).height() == 0)
+					this.scrollTop += $(window).height() * delta;
+					
+					if(this.scrollTop == 0)
+					{
+						console.log(1);
+					}
+					
+					if(this.scrollTop == $(window).height() )
+					{
+						console.log(2);
+					}
+					
+					if(this.scrollLeft == $(window).height() * 2)
+					{
+						console.log(3);
+					}
+	
+					event.preventDefault();
+
+				});
+			}
+				
 			});
 		
 			
