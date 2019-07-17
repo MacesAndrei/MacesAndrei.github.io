@@ -1,162 +1,73 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
 
 	<head>
+
+		<meta name="viewport" content="width=device-width,initial-scale: 1.0">
+		
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="style.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" style=""></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" style=""></script>
 	
-		<title>
+		<script>
 		
-			Euro4TheWin - CNPCB
-		
-		</title>
-		<!-- Bootstrap 3 -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+			$(function() 
+			{
 
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+				$(".horizontal-scroll").mousewheel(function(event, delta) 
+				{
 
-		<!-- Bootstrap 3 JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+					this.scrollLeft += (delta * 100);
+	
+					event.preventDefault();
+
+				});
+
+			});
 		
-		<!-- Internal Files / Fisiere Interne -->
-		
-		<script src="index.js"></script>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="fonts.css" />
-		
-		<!-- Fonturi -->
-		
-		<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet" />
+		</script>
 	
 	</head>
-
+	
 	<body>
 	
-	
-		<!-- Bara de navigare -->
-	
-		<nav class="navbar navbar-inverse">
-			
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>                        
-					</button>
-					<a class="navbar-brand" href="index.html">WebSiteName</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li class="dropdown"><a href="#">Page 1</a></li>
-						<li><a href="#">Page 2</a></li>
-						<li><a href="#">Page 3</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"> Page 4</a></li>
-						<li><a href="#"> Page 5</a></li>
-					</ul>
-				</div>
-			</div>
+		<nav>
+		
+			<a href="#bg-1">1</a>
+			<a href="#bg-2">2</a>
+			<a href="#bg-3">3</a>
+		
 		</nav>
-
-		<!-- Titlu cu descriere -->
+	
+		<div class="horizontal-scroll">
 		
-		<div class="container-fluid text-center w-50">
+			
 		
-			<div class="pv-30">
-				<div class="page-header">
-					<h1>Colegiul Național Constantin Brătescu</h1>
-				</div>
+			<div class="bg-1 parallax" id="bg-1">
 			
-				<p>
-			
-					Timp de două decenii, începând cu anul 1979, Colegiul Naţional Pedagogic ,,
-					Constantin Brătescu” a fost Centru de perfecţionare a educatoarelor şi învăţătorilor 
-					din judeţele Constanţa şi Tulcea; în Centru s-au format circa 6000 de cadre didactice 
-					pentru toată Dobrogea.
-			
-				</p>
-			</div>
-			
-		</div> 
-		
-		<!-- Galerie -->
-		
-		<div class="container-fluid">
-		
-			<div class="row">
-			
-				<div class="col-sm-4">
-				
-					<img src="images/1b.jpg" class="img-responsive">
-				
-				</div>
-				
-				<div class="col-sm-4">
-				
-					<img src="images/2b.jpg" class="img-responsive">
-				
-				</div>
-				
-				<div class="col-sm-4">
-				
-					<img src="images/3b.jpg" class="img-responsive">
-				
-				</div>
-			
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-sm-4">
-				
-					<img src="images/4b.jpg" class="img-responsive">
-				
-				</div>
-				
-				<div class="col-sm-4">
-				
-					<img src="images/5b.jpg" class="img-responsive">
-				
-				</div>
-				
-				<div class="col-sm-4">
-				
-					<img src="images/6b.jpg" class="img-responsive">
-				
-				</div>
-			
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-sm-4">
-				
-					<img src="images/7b.jpg" class="img-responsive">
-				
-				</div>
-				
-				<div class="col-sm-4">
-				
-					<img src="images/8b.jpg" class="img-responsive">
-				
-				</div>
-				
-				<div class="col-sm-4">
-				
-					<img src="images/bg1.jpg" class="img-responsive">
-				
-				</div>
 				
 			
 			</div>
 			
+			<div class="bg-2 parallax" id="bg-2">
+			
+				
+			
+			</div>
+			
+			<div class="bg-3 parallax" id="bg-3">
+			
+	
+			
+			</div>
 		
 		</div>
-		
-		
-		
-	</body>
 	
+	</body>
+
 </html>
