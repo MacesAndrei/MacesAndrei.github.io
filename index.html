@@ -14,16 +14,14 @@
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" style=""></script>
 	
-		<script type="text/javascript" src="dragscroll.js"></script>
-	
 		<script>
 		
 		$(function() 
 			{
-
-				$("h1").hide();
 			
 			if($(window).width() > 640)
+			{
+				
 			
 				$(".horizontal-scroll").mousewheel(function(event, delta)
 				{
@@ -48,10 +46,13 @@
 					event.preventDefault();
 
 				});
-
+			}
 			else
 			{
-				$(".horizontal-scroll").mousewheel(function(event, delta)
+				$('#container').removeClass('horizontal-scroll');
+				$('#container').addClass('vertical-scroll');
+			
+				$(".vertical-scroll").mousewheel(function(event, delta)
 				{
 				if(this.scrollTop%$(window).height() == 0)
 					this.scrollTop += $(window).height() * delta;
@@ -94,23 +95,23 @@
 		
 		</nav>
 	
-		<div class="horizontal-scroll dragscroll">
+		<div class="horizontal-scroll" id="container">
 		
 			
 		
-			<div class="bg-1 parallax" id="bg-1">
+			<div class="bg-white parallax" id="bg-1">
 			
 				<h1 class="center">First</h1>
 			
 			</div>
 			
-			<div class="bg-2 parallax" id="bg-2">
+			<div class="bg-grey parallax" id="bg-2">
 			
 				<h1 class="center">Second</h1>
 			
 			</div>
 			
-			<div class="bg-3 parallax" id="bg-3">
+			<div class="bg-black parallax" id="bg-3">
 			
 				<h1 class="center">Third</h1>
 			
