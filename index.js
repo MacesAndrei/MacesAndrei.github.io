@@ -4,19 +4,19 @@
 			$('.nav-link').click(function(event , delta)
 				{
 				
-					if($(this).prop('href') == 'file:///D:/EuroScola/Site%20%E2%97%8B/index.html#bg-1')
+					if($(this).prop('href') == 'file:///D:/EuroScola/Site%20%E2%97%8B/index.html#bg-1'|| $(this).prop('href') == 'https://macesandrei.github.io/#bg-1' )
 					{
 						
 							$(".nav-link").css('color' , 'black');
 					}
 					
-					else if($(this).prop('href') == 'file:///D:/EuroScola/Site%20%E2%97%8B/index.html#bg-2')
+					else if($(this).prop('href') == 'file:///D:/EuroScola/Site%20%E2%97%8B/index.html#bg-2' || $(this).prop('href') == 'https://macesandrei.github.io/#bg-2' )
 					{
 						
 							$(".nav-link").css('color' , '#555');
 					}
 					
-					else if($(this).prop('href') == 'file:///D:/EuroScola/Site%20%E2%97%8B/index.html#bg-3')
+					else if($(this).prop('href') == 'file:///D:/EuroScola/Site%20%E2%97%8B/index.html#bg-3' || $(this).prop('href') == 'https://macesandrei.github.io/#bg-3')
 					{
 						
 							$(".nav-link").css('color' , 'white');
