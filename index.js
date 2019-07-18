@@ -28,7 +28,6 @@
 				
 			if($(window).width() > 640)
 			{
-				
 			
 				$(".horizontal-scroll").mousewheel(function(event, delta)
 				{
@@ -68,6 +67,7 @@
 			}
 			else
 			{
+				$('nav.link').css('font-size' , '5vw');
 				$('#container').removeClass('horizontal-scroll');
 				$('#container').addClass('vertical-scroll');
 			

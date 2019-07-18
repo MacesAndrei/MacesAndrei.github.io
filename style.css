@@ -42,15 +42,11 @@ nav
 	z-index: 10;
 }
 
-nav a
+.nav-link
 {
 	color: black;
 	font-size: 1.5vw;
 	margin-left: 1vw;
-}
-
-.nav-link
-{
 	transition: 1s;
 }
 
@@ -110,7 +106,12 @@ nav a
 	overflow-y: scroll;
 }
 
-@media @media screen and (max-width: 1000px) 
+@media screen and (max-width: 640px) 
 {
+	.nav-link
+	{
+		font-size: 4vw;
+		margin-left: 2vw;
+	}
 }
 
