@@ -30,17 +30,29 @@
 					
 					if(this.scrollLeft == 0)
 					{
-						console.log(1);
+						if(delta == 1)
+						{
+							$(".nav-link").css('color' , '#555');
+						}
+					}
+					if(this.scrollLeft == $(window).width())
+					{
+						if(delta == 1)
+						{
+							$(".nav-link").css('color' , 'white');
+						}
+						else if(delta == -1)
+						{
+							$(".nav-link").css('color' , 'black');
+						}
 					}
 					
-					if(this.scrollLeft == $(window).width() )
+					else if(this.scrollLeft == $(window).width() * 2)
 					{
-						console.log(2);
-					}
-					
-					if(this.scrollLeft == $(window).width() * 2)
-					{
-						console.log(3);
+						if(delta == -1)
+						{
+							$(".nav-link").css('color' , '#555');
+						}
 					}
 	
 					event.preventDefault();
@@ -55,21 +67,33 @@
 				$(".vertical-scroll").mousewheel(function(event, delta)
 				{
 				if(this.scrollTop%$(window).height() == 0)
-					this.scrollTop += $(window).height() * delta;
+					this.scrollTop -= $(window).height() * delta;
 					
 					if(this.scrollTop == 0)
 					{
-						console.log(1);
+						if(delta == -1)
+						{
+							$(".nav-link").css('color' , '#555');
+						}
+					}
+					if(this.scrollTop == $(window).height())
+					{
+						if(delta == -1)
+						{
+							$(".nav-link").css('color' , 'white');
+						}
+						else if(delta == 1)
+						{
+							$(".nav-link").css('color' , 'black');
+						}
 					}
 					
-					if(this.scrollTop == $(window).height() )
+					else if(this.scrollTop == $(window).height() * 2)
 					{
-						console.log(2);
-					}
-					
-					if(this.scrollLeft == $(window).height() * 2)
-					{
-						console.log(3);
+						if(delta == 1)
+						{
+							$(".nav-link").css('color' , '#555');
+						}
 					}
 	
 					event.preventDefault();
@@ -89,9 +113,9 @@
 	
 		<nav>
 		
-			<a href="#bg-1">1</a>
-			<a href="#bg-2">2</a>
-			<a href="#bg-3">3</a>
+			<a href="#bg-1" class="nav-link">Home</a>
+			<a href="#bg-2" class="nav-link">About</a>
+			<a href="#bg-3" class="nav-link">Contact</a>
 		
 		</nav>
 	

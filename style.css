@@ -3,6 +3,8 @@
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	text-decoration: none;
+	list-style: none;
 }
 
 .center
@@ -11,6 +13,7 @@
 	top: 50%;
 	right:50%;
 	transform: translate(-50% , -50%);
+	font-size: 8vw;
 }
 
 .parallax 
@@ -26,11 +29,29 @@
     display: none; 
 } 
 
+.vertical-scroll::-webkit-scrollbar
+{
+	display: none;
+}
+
 nav
 {
 	position: fixed;
-	top: 0;
+	top: 2vh;
+	left: 2vw;
 	z-index: 10;
+}
+
+nav a
+{
+	color: black;
+	font-size: 1.5vw;
+	margin-left: 1vw;
+}
+
+nav a:hover
+{
+	
 }
 
 .bg-white
