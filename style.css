@@ -49,9 +49,9 @@ nav a
 	margin-left: 1vw;
 }
 
-nav a:hover
+.nav-link
 {
-	
+	transition: 1s;
 }
 
 .bg-white
