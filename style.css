@@ -7,6 +7,11 @@
 	list-style: none;
 }
 
+*::-webkit-scrollbar 
+{
+	display: none; 
+}
+
 .center
 {
 	position: absolute;
@@ -22,16 +27,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.horizontal-scroll::-webkit-scrollbar 
-{ 
-    display: none; 
-} 
-
-.vertical-scroll::-webkit-scrollbar
-{
-	display: none;
 }
 
 nav

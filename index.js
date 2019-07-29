@@ -3,6 +3,7 @@
 				
 				$('.menu').fadeToggle(500);
 				$('#container').toggle();
+				$('#container').toggleClass('.overflow-invert');
 				
 				x.classList.toggle("change");
 				
