@@ -1,7 +1,0 @@
-Pana Luni.
-
-Pasul 1: Afla ce informatie pui pe site.
-Pasul 2: Gandeste Design-ul site-ului.
-Pasul 3: Construieste site-ul dupa design.
-Pasul 4: Testeaza site-ul pe mai multe dispozitive si fa-l responsive.
-Pasul 5: Aplica animatii pe site.
