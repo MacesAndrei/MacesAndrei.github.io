@@ -1,182 +1,253 @@
 *
 {
+	font-family: 'Literata', serif;
 	margin: 0;
 	padding: 0;
-	scroll-behavior: smooth;
-	text-decoration: none;
-	list-style: none;
+	overflow-x: hidden;
 }
 
-*::-webkit-scrollbar 
+.case
 {
-	display: none; 
+	background-color: #555;
+	padding: 10px;
+	width: 50%;
 }
 
-.center
+.devise
 {
-	position: absolute;
-	top: 50%;
-	right:50%;
-	transform: translate(-50% , -50%);
-	font-size: 8vw;
+	font-size: 2vw;
 }
 
-.parallax 
+.author
 {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	font-size: 1vw;
 }
 
-nav
+.row .col-sm-4
 {
-	position: fixed;
-	top: 2vh;
-	left: 2vw;
+	margin-bottom: 20px;
+}
+
+.bg-invert
+{
+	background-color: #222;
+	color: white;
+}
+
+.side-title
+{
+	display: inline-block;
+	margin-top: 10vw;
+	margin-bottom: 3vw;
+	margin-left: 10vw;
+	font-size: 3vw;
+	border-bottom: 1px solid white;
+}
+
+.navbar
+{
+	position: sticky !important;
+	top: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: 1px 1px 10px grey;
 	z-index: 10;
 }
 
-.nav-link
+.w-25
 {
-	color: black;
-	font-size: 1.5vw;
-	margin-left: 1vw;
-	transition: 1s;
+	width: 25%;
+}
+.w-50
+{
+	width: 50%;
+}
+.w-75
+{
+	width: 75%;
+}
+.w-100
+{
+	width: 100%;
 }
 
-.bg-white
+.h-25
 {
-	background-color: white;
-	color: black;
+	height: 25%;
 }
 
-.bg-grey
+.h-50
 {
-	background-color: #aaa;
-	color: #555;
+	height: 50%;
 }
 
-.bg-black
+.h-75
 {
-	background-color: #000;
-	color: white;
+	height: 75%;
 }
 
-.horizontal-scroll div
+.h-100
+{
+	height: 100%;
+}
+
+.parent 
 {
 	position: relative;
-	height: 100vh;
-	width: 100vw;
-	display: inline-block;
-	font-size: 40px;
-	overflow-y: hidden;
 }
 
-.horizontal-scroll
+.child 
 {
-	height: 100vh;
-	width: 100vw;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	font-size: 0;
-	white-space: nowrap;
-}
-
-.vertical-scroll div
-{
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	display: block;
-	font-size: 40px;
-	overflow-y: hidden;
-}
-
-.vertical-scroll
-{
-	height: 100vh;
-	width: 100vw;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.fullscreen
-{
-	width: 100vw;
-	height: 100vh;
-}
-
-.menu
-{
-	position: fixed;
-	background-color: #aaa;
-	color: white;
-	position: relative;
-	z-index: 1000;
-	overflow: auto;
-}
-
-.inside-menu
-{
-	width: 80vw;
-	height: 50xvh;
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
+	transform: translateY(-50%);
 }
 
-.inside-menu a
+/* Margini Verticale */
+
+.mv-5
 {
-	display: block;
-	margin-bottom: 1vh;
+	margin: 5% 0;
 }
 
-a:hover
+.mv-10
 {
-	cursor: pointer;
+	margin: 10% 0;
 }
 
-.menu-link
+.mv-15
 {
-	position: fixed;
-	top: 2vh;
-	right: 2vw;
-	z-index: 10000;
+	margin: 15% 0;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-@media screen and (max-width: 640px) 
+.mv-20
 {
-	.nav-link
-	{
-		font-size: 4vw;
-		margin-left: 2vw;
-	}
-	
-	.bar1, .bar2, .bar3 {
-  width: 27px;
-  height: 3px;
-	}
+	margin: 20% 0;
 }
+
+.mv-25
+{
+	margin: 25% 0;
+}
+
+.mv-30
+{
+	margin: 30% 0;
+}
+
+.mv-auto
+{
+	margin: auto 0;
+}
+
+/* Margini Orizontale */
+
+.mh-5
+{
+	margin: 0 5%;
+}
+
+.mh-10
+{
+	margin: 0 10%;
+}
+
+.mh-15
+{
+	margin: 0 15%;
+}
+
+.mh-20
+{
+	margin: 0 20%;
+}
+
+.mh-25
+{
+	margin: 0 25%;
+}
+
+.mh-30
+{
+	margin: 0 30%;
+}
+
+.mh-auto
+{
+	margin: 0 auto;
+}
+
+/* Extindere Verticala */
+
+.pv-5
+{
+	padding: 5% 0;
+}
+
+.pv-10
+{
+	padding: 10% 0;
+}
+
+.pv-15
+{
+	padding: 15% 0;
+}
+
+.pv-20
+{
+	padding: 20% 0;
+}
+
+.pv-25
+{
+	padding: 25% 0;
+}
+
+.pv-30
+{
+	padding: 30% 0;
+}
+
+/* Extindere Orizontala */
+
+.ph-5
+{
+	padding: 0 5%;
+}
+
+.ph-10
+{
+	padding: 0 10%;
+}
+
+.ph-15
+{
+	padding: 0 15%;
+}
+
+.ph-20
+{
+	padding: 0 20%;
+}
+
+.ph-25
+{
+	padding: 0 25%;
+}
+
+.ph-30
+{
+	padding: 0 30%;
+}
+
+.parallax
+{
+	margin-bottom: 20px;
+}
+
+.image
+{
+	width: 100vw;
+	height: auto;
+}
+
