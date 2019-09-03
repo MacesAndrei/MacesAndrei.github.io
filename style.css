@@ -3,186 +3,95 @@
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
-	text-decoration: none;
+	text-decoration: none !important;
 	list-style: none;
 }
 
-*::-webkit-scrollbar 
+body
 {
-	display: none; 
+	background-image: linear-gradient(#87CEEB, #fdb353) !important;
+	overflow-x: hidden;
 }
 
-.center
-{
-	position: absolute;
-	top: 50%;
-	right:50%;
-	transform: translate(-50% , -50%);
-	font-size: 8vw;
-}
+button:focus {outline:0 !important;}
 
-.parallax 
+.test
 {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-nav
-{
-	position: fixed;
-	top: 2vh;
-	left: 2vw;
-	z-index: 10;
+	height: 1000vh;
 }
 
 .nav-link
 {
-	color: black;
-	font-size: 1.5vw;
-	margin-left: 1vw;
-	transition: 1s;
+	text-align: center;
+	color: white !important;
 }
 
-.bg-white
+.navbar
+{
+	background-color: black !important;
+}
+
+.option
+{
+	padding: 10px 0;
+	font-size: 8vw;
+	text-align: center;
+	color: white;
+}
+
+.option a
+{
+	color: white;
+}
+
+.facebook
+{
+	background-color: rgb(60,90,153);
+	font-family: facebook;
+}
+
+.facebook a:hover
+{
+	color: rgb(60,90,153) !important;
+}
+
+.facebook:hover
 {
 	background-color: white;
-	color: black;
 }
 
-.bg-grey
+.gmail
 {
-	background-color: #aaa;
-	color: #555;
+	background-color: rgb(199,22,16);
+	font-family: gmail;
+	font-size: 7vw;
 }
 
-.bg-black
+.gmail a:hover
 {
-	background-color: #000;
-	color: white;
+	color: rgb(199,22,16) !important;
 }
 
-.horizontal-scroll div
+.gmail:hover
 {
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	display: inline-block;
-	font-size: 40px;
-	overflow-y: hidden;
-	border-left: 10px black;
+	background-color: white;
 }
 
-.horizontal-scroll div > *
+.titlu
 {
-	display: none;
-}
-
-.horizontal-scroll
-{
-	height: 100vh;
-	width: 100vw;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	font-size: 0;
-	white-space: nowrap;
-}
-
-.vertical-scroll div
-{
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	display: block;
-	font-size: 40px;
-	overflow-y: hidden;
-}
-
-.vertical-scroll
-{
-	height: 100vh;
-	width: 100vw;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.fullscreen
-{
-	width: 100vw;
-	height: 100vh;
-}
-
-.menu
-{
-	position: fixed;
-	background-color: #aaa;
-	color: white;
-	position: relative;
-	z-index: 1000;
-	overflow: auto;
-}
-
-.inside-menu
-{
-	width: 80vw;
-	height: 50xvh;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 	text-align: center;
+	margin: 10px;
 }
 
-.inside-menu a
+.box
 {
-	display: block;
-	margin-bottom: 1vh;
+	width: 100vw;
+	height: 100vh;
 }
 
-a:hover
+p
 {
-	cursor: pointer;
-}
-
-.menu-link
-{
-	position: fixed;
-	top: 2vh;
-	right: 2vw;
-	z-index: 10000;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-@media screen and (max-width: 640px) 
-{
-	.nav-link
-	{
-		font-size: 4vw;
-		margin-left: 2vw;
-	}
-	
-	.bar1, .bar2, .bar3 {
-  width: 27px;
-  height: 3px;
-	}
+	margin: 15px;
+	color: black !important;
+	font-size: 20px;
 }
