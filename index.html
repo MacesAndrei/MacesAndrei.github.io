@@ -55,7 +55,12 @@
 				float: right;
 			}
 		
-			@media only screen and (max-width: 1000px) 
+			.fullscreen
+			{
+				display: none;
+			}
+			
+			@media only screen and (max-width: 1100px) 
 			{
 			
 				.window
@@ -74,16 +79,17 @@
 				{
 					float: none;
 					display: block;
-					
 				}
-			
+				
+				.fullscreen
+				{
+					width: 100vw;
+					height: 100vh;
+					display: block;
+				}
 			}
 			
-			.fullscreen
-			{
-				width: 100vw;
-				height: 100vh;
-			}
+			
 			
 		</style>
 		
