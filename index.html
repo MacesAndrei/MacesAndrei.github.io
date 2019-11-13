@@ -60,35 +60,29 @@
 			
 				.window
 				{
-					width: 100vw;
-					height: 100vh;
-					top: 0;
-					left: 0;
-					transform: translate(0 , 0);
-					position: fixed;
-					overflow: scroll;
+					display: none;
 				}
 			
 				.discord-window
 				{
-					width: 90vw;
-					height: 100%:
+					width: 100vw;
 					float: none;
 					display: block;
-					margin: 0 auto 20px auto;
-					
 				}
 				
 				.minecraft-window
 				{
-					width: 90vw;
-					height: 100%:
-					display: block;
-					margin: 0 auto 20px auto;
 					float: none;
+					display: block;
 					
 				}
 			
+			}
+			
+			.fullscreen
+			{
+				width: 100vw;
+				height: 100vh;
 			}
 			
 		</style>
@@ -101,10 +95,15 @@
 		<div class="window">
 		
 			<iframe src="https://discordapp.com/widget?id=641415231200821249&theme=dark"allowtransparency="true" frameborder="0" class="discord-window"></iframe>
+			
+
+			
 			<iframe src="https://discordapp.com/widget?id=641415231200821249&theme=dark"allowtransparency="true" frameborder="0" class="minecraft-window"></iframe>
 	
 		</div>
 		
+		<iframe src="https://discordapp.com/widget?id=641415231200821249&theme=dark"allowtransparency="true" frameborder="0" class="fullscreen"></iframe>
+	
 		
 	</body>
 	
