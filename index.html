@@ -19,7 +19,7 @@
 				src: url('whitneysemibold.woff');
 			}
 		
-			.discord
+			.window
 			{
 				background-color: rgb(44,47,51);
 				position: absolute;
@@ -29,11 +29,30 @@
 				color: rgb(153,170,181);
 				padding: 30px;
 				font-family: Whitney;
+				width: 75vw;
 			}
 			
 			html body
 			{
-				background-color: rgb
+				background-color: rgb(153,170,181);
+			}
+			
+			.discord-window
+			{
+				height: 50vh;
+				width: 25vw; 
+				min-width: 300px;
+				min-height: 400px;
+				float: right;
+			}
+			
+			.minecraft-window
+			{
+				height: 50vh;
+				width: 25vw; 
+				min-width: 300px;
+				min-height: 400px;
+				float: left;
 			}
 		
 		</style>
@@ -43,9 +62,9 @@
 
 	<body>
 	
-		<div class="discord">
+		<div class="window">
 		
-			<iframe src="https://discordapp.com/widget?id=641415231200821249&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+			<iframe src="https://discordapp.com/widget?id=641415231200821249&theme=dark"allowtransparency="true" frameborder="0" class="discord-window"></iframe>
 	
 		</div>
 		
