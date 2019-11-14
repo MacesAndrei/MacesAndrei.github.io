@@ -1,53 +1,53 @@
-<html lang="en"><head>
-<meta charset="UTF-8">
-<title>Minecraft widget</title>
-<style>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Minecraft widget</title>
+		<style>
+
+			html body
+			{
+
+				background-color: rgb(35,39,42);
+
+			}
+
+			.info{
+			  padding: 30px 15px;
+			  color: rgb(153,170,181);
+			  text-align: center;
+			  font-size: 30px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="info">
+			<b style="color: white; font-size: 30px; padding: 5px 10px ; background-color: rgb(114,137,218);">Cosmin's Server Survival Mode</b>
+		</div>
 
 
-#rest{
-  padding:30px 15px;
-  line-height:30px;
-  color: black;
-}
+		<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script id="rendered-js">
+				var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
+				$.getJSON(url, function (r) {
+				  if (r.error) {
+					$('#rest').html('Server Offline');
+					return false;
+				  }
+				  var pl = '';
+				  if (r.players.sample.length > 0) 
+				  {
+					  $('.info').append('<br><br><b>Players Online:</b> ' + r.players.online)
+					  
+					  for(var i = 0 ; i < r.players.sample.length ; i++)
+						  $('.info').append('<br><br><b style="color: rgb(114,137,218);"> '  + r.players.sample[i].name + '</b>');
+				  }
 
-</style>
-<script>
-  window.console = window.console || function(t) {};
-</script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-</head>
-<body translate="no">
-
-<div id="rest">
-<b>Cosmin's Server Survival Mode</b>
-</div>
-<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script id="rendered-js">
-      //based on a pen by @robinselmer
-var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
-//https://mcapi.us/server/status?ip=666.fluctis.com&port=25757
-$.getJSON(url, function (r) {
-  //data is the JSON string
-  if (r.error) {
-    $('#rest').html('Server Offline');
-    return false;
-  }
-  var pl = '';
-  if (r.players.sample.length > 0) 
-  {$('#rest').append('<br><b>Players Online:</b> ' + r.players.online)
-  for(var i = 0 ; i < r.players.sample.length ; i++)
-  {pl = '<br>Player ' + (i+1) + ' : ' + r.players.sample[i].name;
-  $('#rest').append(pl);}}
-  $('#favicon').attr('src', r.favicon);
-
-});
-      //# sourceURL=pen.js
-    </script>
+				});
+		</script>
 
 
-</body></html>
+	</body>
+</html>
