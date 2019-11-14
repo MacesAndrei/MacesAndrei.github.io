@@ -23,7 +23,6 @@
 	<body>
 
 		<div class="info">
-			<b style="color: white; font-size: 30px; padding: 5px 10px ; background-color: rgb(114,137,218);">Cosmin's Server Survival Mode</b>
 		</div>
 
 
@@ -32,18 +31,25 @@
 		<script id="rendered-js">
 				var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
 				$.getJSON(url, function (r) {
-				  if (r.error) {
-					$('#rest').html('Server Offline');
+				  if (r.error) 
+				  {
+					$('.info').html('<b style="color: white; font-size: 30px; padding: 5px 10px ; background-color: rgb(114,137,218);">' + 'Server Offline' + '</b>');
 					return false;
 				  }
-				  var pl = '';
-				  if (r.players.sample.length > 0) 
+				  else
 				  {
+					
+					$('.info').html('<b style="color: white; font-size: 30px; padding: 5px 10px ; background-color: rgb(114,137,218);">' + r.description + '</b>');
+				  }
+				  				  
+					  $('.info').append('<br><br><b>Maximum Players Amount :</b> ' + r.players.max)
+				  
+				  var pl = '';
+
 					  $('.info').append('<br><br><b>Players Online:</b> ' + r.players.online)
 					  
 					  for(var i = 0 ; i < r.players.sample.length ; i++)
 						  $('.info').append('<br><br><b style="color: rgb(114,137,218);"> '  + r.players.sample[i].name + '</b>');
-				  }
 
 				});
 		</script>
