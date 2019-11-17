@@ -29,7 +29,8 @@
 		<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script id="rendered-js">
-				var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
+				
+				 var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
 				$.getJSON(url, function (r) {
 				  if (r.error) 
 				  {
@@ -50,8 +51,36 @@
 					  
 					  for(var i = 0 ; i < r.players.sample.length ; i++)
 						  $('.info').append('<br><br><b style="color: rgb(114,137,218);"> '  + r.players.sample[i].name + '</b>');
-
 				});
+
+				
+				
+				setInterval(function(){
+				var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
+					$.getJSON(url, function (r) {
+					  if (r.error) 
+					  {
+						$('.info').html('<b style="color: white; font-size: 30px; padding: 5px 10px ; background-color: rgb(114,137,218);">' + 'Server Offline' + '</b>');
+						return false;
+					  }
+					  else
+					  {
+						
+						$('.info').html('<b style="color: white; font-size: 30px; padding: 5px 10px ; background-color: rgb(114,137,218);">' + r.description + '</b>');
+					  }
+									  
+						  $('.info').append('<br><br><b>Maximum Players Amount :</b> ' + r.players.max)
+					  
+					  var pl = '';
+
+						  $('.info').append('<br><br><b>Players Online:</b> ' + r.players.online)
+						  
+						  for(var i = 0 ; i < r.players.sample.length ; i++)
+							  $('.info').append('<br><br><b style="color: rgb(114,137,218);"> '  + r.players.sample[i].name + '</b>');
+					});
+				}, 2000);
+				
+				
 		</script>
 
 
