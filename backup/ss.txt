@@ -764,7 +764,7 @@
 	
 	<script>
 	
-		/*var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
+		var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
 				$.getJSON(url, function (r) {
 				  if (r.error) 
 				  {
@@ -774,10 +774,12 @@
 				  else
 				  {
 
-					$('.widgetHeaderCount-3Vm4u8').html('<strong>'+ r.players.online + ' </strong>Members Online' );
+					$('.widgetHeaderCount-3Vm4u8').append('<strong>'+ r.players.online + ' </strong>Members Online' );
 					$('.widgetHeader-2Hz_Ln').append('<span class="widgetHeaderCount-3Vm4u8">' + r.description + '</span>');
 					
 				  }
+				  				  
+					  $('.info').append('<br><br><b>Maximum Players Amount :</b> ' + r.players.max)
 				  
 				  var pl = '';
 					 
@@ -788,7 +790,7 @@
 					  for(var i = 0 ; i < r.players.sample.length ; i++)
 						  $('.PLAYERS').append( '<div class="widgetMember-s-bqOZ"><span class="widgetMemberName-1s0T0o">' + r.players.sample[i].name + '</span></div>');
 }
-				});*/
+				});
 	
 		 setInterval(function(){var url = "https://api.minetools.eu/ping/5.14.129.88/25565";
 				$.getJSON(url, function (r) {
@@ -799,8 +801,10 @@
 				  }
 				  else
 				  {
-				  $('.widgetHeader-2Hz_Ln').html('<span class="widgetHeaderCount-3Vm4u8">' + r.description + '</span>');
-					$('.widgetHeaderCount-3Vm4u8').prepend('<center><strong>'+ r.players.online + ' </strong>Members Online</center>' );
+
+					$('.widgetHeaderCount-3Vm4u8').replaceWith('<strong>'+ r.players.online + ' </strong>Members Online' );
+					$('.widgetHeader-2Hz_Ln').append('<span class="widgetHeaderCount-3Vm4u8">' + r.description + '</span>');
+					
 				  }
 				  
 				  var pl = '';
@@ -808,17 +812,15 @@
 					  if(r.players.sample.length == 0) $('.ENTRY').html('<div class="widgetMembersOnline-314YF1">' + 'There are no members online currently');
 					  else
 					 {  
-					 $('.ENTRY').html('<div class="widgetMembersOnline-314YF1">' + 'Members online' + '</div>');
+					 $('.ENTRY').prepend('<div class="widgetMembersOnline-314YF1">' + 'Members online' + '</div>');
 					  for(var i = 0 ; i < r.players.sample.length ; i++)
-					if(i == 0)
-						$('.ENTRY').append( '<div class="PLAYERS"><div class="widgetMember-s-bqOZ"><span class="widgetMemberName-1s0T0o">' + r.players.sample[i].name + '</span></div></div>');
+					  if(i == 1)
+						$('.PLAYERS').html( '<div class="widgetMember-s-bqOZ"><span class="widgetMemberName-1s0T0o">' + r.players.sample[i].name + '</span></div>');
 						else
-						$('.ENTRY').append( '<div class="widgetMember-s-bqOZ"><span class="widgetMemberName-1s0T0o">' + r.players.sample[i].name + '</span></div>');
-						if(r.players.sample.length > 0) $('.ENTRY').append( '</div>');
-						
+						$('.PLAYERS').html( '<div class="widgetMember-s-bqOZ"><span class="widgetMemberName-1s0T0o">' + r.players.sample[i].name + '</span></div>');
 						
 					}
-				});} , 1000);
+				});} , 2000);
 	
 	</script>
 
