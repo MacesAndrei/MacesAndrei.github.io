@@ -768,13 +768,13 @@
 				$.getJSON(url, function (r) {
 				  if (r.error) 
 				  {
-					$('*').html('ERROR 404');
+					$('.widgetHeaderCount-3Vm4u8').append('Server Offline' );
 					return false;
 				  }
 				  else
 				  {
 
-					$('.widgetHeaderCount-3Vm4u8').append('<strong>'+ r.players.online + ' </strong>Member Online' );
+					$('.widgetHeaderCount-3Vm4u8').append('<strong>'+ r.players.online + ' </strong>Members Online' );
 					$('.widgetHeader-2Hz_Ln').append('<span class="widgetHeaderCount-3Vm4u8">' + r.description + '</span>');
 					
 				  }
