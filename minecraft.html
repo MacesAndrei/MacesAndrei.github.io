@@ -805,7 +805,7 @@
 				  
 				  var pl = '';
 					 
-					  if(r.players.sample.length == 0) $('.ENTRY').html('<div class="widgetMembersOnline-314YF1">' + 'There are no members online currently');
+					  if(r.players.sample.length == 0 && !r.error) $('.ENTRY').html('<div class="widgetMembersOnline-314YF1">' + 'There are no members online currently');
 					  else
 					 {  
 					 $('.ENTRY').html('<div class="widgetMembersOnline-314YF1">' + 'Members online' + '</div>');
