@@ -1,0 +1,108 @@
+<html>
+
+	<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<style>
+	
+	*
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	.square
+	{
+		display: inline-block;
+		width: 5vw;
+		height: 5vh;
+		color: white;
+		border: 1px solid grey;
+		box-sizing: border-box;
+		transition: 0.1s;
+	}
+	
+	.square:hover
+	{
+		background: blue;
+	}
+	
+	.content
+	{
+		width: 100vw;
+		height: 100vh;
+	}
+	
+	.red1
+	{
+		background-color: red;
+	}
+	
+	.score
+	{
+		display: inline-block;
+		width: 5vw;
+		height: 5vh;
+		color: white;
+		border: 1px solid grey;
+		box-sizing: border-box;
+		color: black;
+		font-size: 2vw;
+		text-align: center;
+		font-weight: bold;
+		position: absolute;
+	}
+	
+	</style>
+	
+	<script>
+	
+	var x , y , score = -1;
+	
+	function RESET()
+	{
+		score++;
+		$(".content").html("<div class=\"score\">" + score + "</div>");
+		x = Math.ceil(Math.random() * 19 + 1);
+		y = Math.ceil(Math.random() * 20);
+		for(var i = 1 ; i <= 20 ; i++)
+			for(var j = 1 ; j <= 20 ; j++)
+				if(i==x && j==y)
+					$(".content").append("<div class=\"square red1\"></div>");
+				else
+					$(".content").append("<div class=\"square\"></div>");
+		console.log(x + " " + y);
+		INIT();
+	}
+	
+	function INIT()
+	{
+		$(".red1").hover(function(){
+			RESET();
+		});
+		
+		$(".red1").click(function(){
+			RESET();
+		});
+	}
+	
+	$(function(){
+		
+		RESET();
+		INIT();
+		
+	});
+	
+	</script>
+	
+	</head>
+	
+	<body>
+	
+		<div class="content">
+		</div>
+	
+	</body>
+
+</html>
