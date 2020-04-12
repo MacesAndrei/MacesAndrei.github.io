@@ -3,7 +3,7 @@
 	<head>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	
+
 	<style>
 	
 	*
@@ -54,20 +54,39 @@
 		position: absolute;
 	}
 	
+	@media only screen and (max-width: 600px)
+	{
+		.square
+		{
+			width: 10vw;
+			height: 10vh;
+		}
+		
+		.score
+		{
+			width: 10vw;
+			height: 10vh;
+			font-size: 5vw;
+		}
+	}
+	
 	</style>
 	
 	<script>
 	
-	var x , y , score = -1;
+	var x , y , score = -1 , SIZE;
+	
+	if($(window).width() > 600) SIZE = 20;
+	else SIZE = 10;
 	
 	function RESET()
 	{
 		score++;
 		$(".content").html("<div class=\"score\">" + score + "</div>");
-		x = Math.ceil(Math.random() * 19 + 1);
-		y = Math.ceil(Math.random() * 20);
-		for(var i = 1 ; i <= 20 ; i++)
-			for(var j = 1 ; j <= 20 ; j++)
+		x = Math.ceil(Math.random() * (SIZE - 1) + 1);
+		y = Math.ceil(Math.random() * SIZE);
+		for(var i = 1 ; i <= SIZE ; i++)
+			for(var j = 1 ; j <= SIZE ; j++)
 				if(i==x && j==y)
 					$(".content").append("<div class=\"square red1\"></div>");
 				else
@@ -90,6 +109,7 @@
 	$(function(){
 		
 		RESET();
+		score--;
 		INIT();
 		
 	});
