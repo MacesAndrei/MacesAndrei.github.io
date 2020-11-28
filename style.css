@@ -2,49 +2,77 @@
 {
 	padding: 0;
 	margin: 0;
-	list-style: none;
 	text-decoration: none;
 }
 
-.content
+.romana
 {
-	background: white;
-	box-shadow: 5px 5px 15px black;
-	width: 80vw;
-	height: 80vh;
+	width: 50vw;
+	height: 100vh;
+	background: black;
+	text-align: center;
+	font-size: 40px;
+}
+
+.mate
+{
+	width: 50vw;
+	height: 100vh;
+	background: red;
+	text-align: center;
+	font-size: 40px;
+}
+
+.flex-container
+{
+	display: flex;
+}
+
+.romana h1
+{
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50% , -50%);
-	overflow: scroll;
+	transform: translate(0% , -50%);
+	width: 50%;
 }
 
-.cale
+.mate h1
 {
-	margin: 20px;
-	width: 50vw;
-	border: none;
-	box-shadow: 0px 0px 5px black;
+	position: absolute;
+	top: 50%;
+	transform: translate(0% , -50%);
+	width: 50%;
 }
 
-.load
+.white
 {
-	background: cyan;
-	border: none;
-	padding: 5px 10px 5px 10px;
-	font-size: 15px;
-	font-family: Arial;
-	transition: 0.5s;
+	color: white;
 }
 
-.load:hover
+.yellow
 {
-	background: yellow;
-	transition: 0.5s;
+	color: yellow;
 }
 
-.load:active
+.s
 {
-	background: red;
-	transition: 0.5s;
+	width: 100vw;
+	height: 32.9vh;
+	background: #42a7f5;
+	border: 0.3vh solid cyan;
+	text-align: center;
+	font-size: 2vw;
+	
+}
+
+.s h1
+{
+	line-height: 32.9vh;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+.sr
+{
+	overflow: hidden;
 }
